@@ -1,8 +1,9 @@
-//dipapi.tsx
+
 "use client";
 import { useEffect, useState } from "react";
-import { Dip } from "../types";
+import { MenuItems, Dip, Drink } from "../types";
 
+//dip api
 const API_KEY = "yum-7BTxHCyHhzI";
 const BASE_URL =
   "https://fdnzawlcf6.execute-api.eu-north-1.amazonaws.com/menu?type=dip";
@@ -42,8 +43,7 @@ export const useDipData = () => {
   return { dips, error };
 };
 
-//drinkapi.tsx
-import { Drink } from "../types";
+//drink api
 
 const BASE_URL_drink =
   "https://fdnzawlcf6.execute-api.eu-north-1.amazonaws.com/menu?type=drink";
@@ -83,9 +83,8 @@ export const useDrinkData = () => {
   return { drinks, error };
 };
 
-//wontonapi.tsx
+//wonton api
 
-import { MenuItems } from "../types";
 
 const BASE_URL_wonton =
   "https://fdnzawlcf6.execute-api.eu-north-1.amazonaws.com/menu?type=wonton";

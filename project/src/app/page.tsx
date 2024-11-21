@@ -4,7 +4,7 @@ import { useState } from "react";
 import WontonCard from "./components/menucard";
 import DipCard from "./components/dipcard";
 import Drink from "./components/drinkcard";
-import Cart from "./components/cart";
+import Cart from "./components/cartItems";
 import { CartItems } from "./types";
 
 export default function Home() {
